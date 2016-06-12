@@ -1,0 +1,122 @@
+ @CHARSET "EUC-KR";
+div[class^=accordion]{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+#red_content > a{
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+/* MAIN_INFO */
+.s_accordion_title{
+/* 	background-image : url("../img/pressform.png"); */
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	list-style: none;
+	font-size: 12px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+	border: 1px solid #cccccc;
+	margin-top: 15px;
+}
+
+.s_accordion_title ul{
+	list-style:none;
+}
+
+.s_accordion_title ul span{
+	font-weight: bold;
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+.thumbnail{
+	margin-right : 10px;
+}
+
+.s_icon{
+	margin: 15px 6% 0 auto;
+	float: right;
+}
+
+/* °­ÁÂµî·Ï List title */
+.insert_title{
+	background-image : url("../img/pressform.png");
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	font-size: 15px;
+	color: #d75b5b;
+	font-weight: normal;
+	background: -webkit-gradient(linear, left top, left bottom,	from(#ffffff),to(#dddddd));
+	border: 1px solid #cccccc;
+	margin-top: 15px;
+}
+
+.insert_title > ul{
+	list-style: none;
+}
+
+.insert_icon{
+	margin: 15px 6% 0 auto;
+	float: right;
+}
+
+
+/* SUB_INFO */
+.s_accordion_sub {
+/* 	background-image : url("../img/notpressform.png"); */
+	display: none;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	background-color: #ffffff;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 100%;
+}
+
+.s_accordion_sub > ul{
+	list-style: none;
+	font-size: 12px;
+	padding: 15px 25px 0 25px;
+	margin-top: 0px;
+}
+
+.subDate{
+	margin-right : 10px;
+}
+
+li[class^=progressbar] > .ui-progressbar-value	{
+	background:  #d75b5b;
+}
+
+.percent{
+	font-size:13px;
+	font-weight: bold;
+	color: #d75b5b;
+}
+
+#noRegMessege{
+	color: #d75b5b;
+	margin-bottom: 0;
+}
+
+.s_accordion_sub table{
+	font-size : 12px;
+	width : 50%;
+	text-align : center;
+}
+
+.s_accordion_title ul> .s_accordion_sub {
+	display: none;
+}
+
+.s_accordion_title ul:target > .s_accordion_sub {
+	display: block;
+} 

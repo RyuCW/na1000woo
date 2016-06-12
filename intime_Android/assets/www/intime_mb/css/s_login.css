@@ -1,0 +1,25 @@
+#s_login_page{
+	width: 100%;
+	height: 100%;
+}
+
+#s_login{
+	margin: 25% 20% 25% 20%;
+}
+
+#s_login input{
+	margin : 5% 0 5% 0;
+	font-size: 12px;
+}
+
+#s_login a {
+	margin:5% 2% 5% 2%;
+}
+
+#s_joinBtn{
+	width: 50%;
+}
+
+#s_loginTitleTxt{
+	color: #a4500c;
+}

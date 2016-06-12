@@ -1,0 +1,34 @@
+#yellow{
+	height: 100%;
+}
+#yellow_con{
+	height:100%;
+}
+
+.picture_img{
+	height: 100%; 
+	width: 100%;
+}
+
+.picture{
+	height: 120px; 
+	width: 120px; 
+	background-color: #fbfbfb; 
+	border: 1px solid #b8b8b8;
+}
+
+#s_info_addr{
+	height : 60px;
+}
+
+#t_info_addr{
+	height : 60px;
+}
+
+.ph_fieldContain{
+	padding: 0 0 0 0;
+}
+
+.ui-br {
+	border-bottom-style: none;
+}
