@@ -1,0 +1,38 @@
+.press{
+	background : url("../img/pressform.png");
+	width : 100%;
+}
+
+.notpress{
+	background : url("../img/notpressform.png");
+	
+	width : 100%;
+}
+
+
+.red_press{
+	width: 100%;
+}
+.purple_press{
+	width: 100%;
+}
+.yellow_press{
+	width: 100%;
+}
+.green_press{
+	width: 100%;
+}
+.red{
+	width: 100%;
+}
+.purple{
+	width: 100%;
+	border: 1px solid blue;
+	
+}
+.yellow{
+	width: 100%;
+}
+.green{
+	width: 100%;
+}

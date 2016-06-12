@@ -1,0 +1,69 @@
+<div data-role="page" id="green">
+		<div data-theme="a" data-role="header">
+			<h3>옵션</h3>
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="s_lecture_info.html" class="notpress" data-transition="none"
+						data-theme="d"> <img src="../img/red_press.png" class="red">
+					</a></li>
+					<li><a href="s_attend_info.html" class="notpress" data-transition="none"
+						data-theme="d"> <img src="../img/purple_press.png"
+							class="purple">
+					</a></li>
+					<li><a href="s_inform.html" class="notpress" data-transition="none"
+						data-theme="d"> <img src="../img/yellow_press.png"
+							class="yellow">
+					</a></li>
+					<li><a href="s_option.html" class="press" data-transition="none"
+						data-theme="d"> <img src="../img/green.png"
+							class="green_press">
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<script src="../js/student/s_option.js"></script>
+		<div data-role="content" id="s_optionContent">
+		<input type="button" class="logout" value="로그아웃">
+<a
+			href="#popupDialog" data-rel="popup" data-position-to="window"
+			data-role="button" data-inline="true" data-transition="pop"
+			data-icon="delete" data-theme="b" class="option_del">계정삭제</a>
+		<div data-role="popup" id="popupDialog" data-overlay-theme="a"
+			data-theme="c" data-dismissible="false" style="max-width: 400px;"
+			class="ui-corner-all">
+			<div data-role="header" data-theme="a" class="ui-corner-top">
+				<h1>계정삭제</h1>
+			</div>
+			<div data-role="content" data-theme="d"
+				class="ui-corner-bottom ui-content">
+				<h3 class="ui-title">정말 계정을 삭제하시겠습니까?</h3>
+				
+					<center><a id="s_deleteBtn" href="#" data-role="button"
+					data-inline="true" data-rel="back" data-transition="flow"
+					data-theme="b">Delete</a>
+					<a href="#" data-role="button" data-inline="true" data-rel="back"
+					data-theme="c">Cancel</a></center> 
+			</div>
+		</div>
+
+		<br><br>
+		<center>
+				
+			<select name="s_alramTime" id="s_alramTime" data-mini="true" disabled="disabled">
+				<option class="1" value="1">미리알림시간 선택</option>
+				<option class="5" value="300">5분전</option>
+				<option class="10" value="600">10분전</option>
+				<option class="15" value="900">15분전</option>
+				<option class="30" value="1800">30분전</option>
+			</select>
+		</center>
+
+			<div data-role="fieldcontain" class="toggle">
+				<select name="s_toggleSwitch" id="s_toggleSwitch" data-theme=""	data-role="slider" data-mini="true">
+					<option id="s_1"></option>
+					<option id="s_2"></option>
+				</select>
+			</div>
+		</div>
+	</div>

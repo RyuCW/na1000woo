@@ -1,0 +1,79 @@
+
+<div data-role="page" id="purple">
+	<script src="../js/student/swipeview.js"></script>
+	<script src="../js/student/s_attend_info.js"></script>
+	<script>
+		$("#purple").css({
+			overflow : 'hidden'
+		}).bind('touchmove', function(e) {
+			e.preventDefault()
+		});
+	</script>
+	<div data-theme="a" data-role="header">
+		<h3>출결관리</h3>
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a class="notpress" href="s_lecture_info.html"
+					data-transition="none" data-theme="d"> <img
+						src="../img/red_press.png" class="red">
+				</a></li>
+				<li><a class="press" href="s_attend_info.html"
+					data-transition="none" data-theme="d"> <img
+						src="../img/purple.png" class="purple_press">
+				</a></li>
+				<li><a class="notpress" href="s_inform.html"
+					data-transition="none" data-theme="d"> <img
+						src="../img/yellow_press.png" class="yellow">
+				</a></li>
+				<li><a class="notpress" href="s_option.html"
+					data-transition="none" data-theme="d"> <img
+						src="../img/green_press.png" class="green">
+				</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div data-role="content" id="attend">
+		<div id="select-datepicker-form">
+			<div id="datepicker-div">
+				<input type="text" id="datepicker" readonly="readonly" />
+				<script>
+					$(function() {
+						$("#datepicker").datepicker(
+								{
+									dateFormat : "yy-m-dd",
+									showMonthAfterYear : true,
+									dayNamesMin : [ '일', '월', '화', '수', '목',
+											'금', '토' ],
+									monthNames : [ '1월', '2월', '3월', '4월',
+											'5월', '6월', '7월', '8월', '9월',
+											'10월', '11월', '12월' ],
+									showButtonPanel : true,
+									// 								currentText : '오늘 날짜',
+									closeText : '전체보기'
+								});
+						$(".student-list-line-name").click(function() {
+							$("#popupBasic").popup("open");
+						});
+						$("#present-confirm").click(function() {
+							$("#popupBasic").popup("close");
+						});
+					});
+				</script>
+			</div>
+
+			<div id='select-choice-custom-div'>
+				<select class="subject" id="select-choice-custom" data-icon="false">
+					<option>과목선택▼</option>
+					<option>--전체보기--</option>
+				</select>
+			</div>
+
+
+		</div>
+
+	</div>
+	
+	<div id="lecture-list-div"></div>
+</div>

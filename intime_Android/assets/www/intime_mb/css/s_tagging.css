@@ -1,0 +1,32 @@
+@CHARSET "EUC-KR";
+
+.tagging_page{
+	width : 100%;
+	height : 100%;
+	float: left;
+}
+
+.tagging_page img{
+	margin: 20% 0 0 0;
+}
+
+/* .tagging_page div{
+	margin-top:10px; 
+} */
+
+.tagging_page div{
+	width: 100%;
+	margin: 10px 0 0 0;
+	font-size:15px;
+	font-weight : bold;
+	text-align : center;
+	color: #d75b5b 
+}
+
+.list_main{
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/background/list_background.png");
+	background-repeat: repeat;
+}
+

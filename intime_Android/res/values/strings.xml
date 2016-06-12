@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">intime</string>
+    <string name="exit_app_title">intime</string>
+    <string name="exit_app_message">프로그램을 종료하시겠습니까?</string>
+</resources>

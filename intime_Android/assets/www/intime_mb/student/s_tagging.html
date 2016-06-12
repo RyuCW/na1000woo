@@ -1,0 +1,72 @@
+   	<div data-role="page" id="tagging">
+		<div data-theme="a" data-role="header">
+			<h3>강좌정보</h3>
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a class="press" href="s_lecture_info.html" data-transition="none"
+						data-theme="d"> <img src="../img/red.png" class="red_press">
+					</a></li>
+					<li id="test"><a class="notpress" href="s_attend_info.html"
+						data-transition="none" data-theme="d"> <img
+							src="../img/purple_press.png" class="purple">
+					</a></li>
+					<li><a href="s_inform.html" class="notpress" data-transition="none"
+						data-theme="d"> <img src="../img/yellow_press.png"
+							class="yellow">
+					</a></li>
+					<li><a href="s_option.html" class="notpress" data-transition="none"
+						data-theme="d"> <img src="../img/green_press.png"
+							class="green">
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		
+   	<div id="tagContents">
+   	<div data-role="content">
+   	<div class="hidden">
+	   	<div class="tagging_page">
+	   		<center>
+		   		<img src="../img/tagging/tagging_icon.png"/>
+		   		<div>
+			   		<p>NFC카드를</p><p>태깅해 주세요</p>
+			   		<span class="nfcNum2"></span>
+		   		</div>
+	   		</center>
+	   	</div>
+	</div>
+	</div>
+	
+    <script id="non-ndef-template" type="text/x-handlebars-template">
+		<div class="tagging_page">
+	   		<center>
+		   		<img src="../img/tagging/tagging_icon.png"/>
+		   		<div>
+			   		<p>처리중입니다...</p>
+					<span class="nfcNum2" style="display: none;">{{bytesToHexString id}}</span>
+		   		</div>
+	   		</center>
+	   	</div>
+	</script>
+
+    <script id="tag-template" type="text/x-handlebars-template">
+		<div class="tagging_page">
+	   		<center>
+		   		<img src="../img/tagging/tagging_icon.png"/>
+		   		<div>
+			   		<p>처리중입니다...</p>
+					<span class="nfcNum2" style="display: none;">{{bytesToHexString id}}</span>
+		   		</div>
+	   		</center>
+	   	</div>
+    </script>
+    <script type="text/javascript" charset="utf-8" src="../js/cordova-2.5.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/phonegap-nfc-0.4.3-SNAPSHOT.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/handlebars.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/student/s_tagging.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+   	</div>
+</div>
